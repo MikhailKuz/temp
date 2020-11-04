@@ -1,0 +1,32 @@
+- **Accurate and Robust Feature Importance Estimation under Distribution Shifts, 2020**  [[paper]](https://arxiv.org/pdf/2009.14454.pdf)
+  - описывается подход к оценке важности признаков для нейросетей: основная сеть обучается совместно с дополнительной (second net), у которой:
+    - цель - научиться предсказывать loss основной сети
+    - input - латентные представления после некоторых слоёв основной сети
+    - loss
+      - contrastive training - сохраняем правильное упорядочивание пар скоров
+      - dropout calibration - hinge loss + доверительные интервалы  
+  - важность признака - разница предсказаний вспомогательной сети с его маскированием и без  
+  *Итог*:
+    - на 15-30 % лучше качество, чем у Shap
+    - при увеличении различия распределения x_test, по сравнению с x_train, loss second net монотонно растёт
+    - подход устойчивей при сильных изменениях x_test Deep_Shap'а в 2 раза
+
+- **Feature Importance Ranking for Deep Learning, 2020** [[paper]](https://arxiv.org/pdf/2010.08973.pdf)
+  - рассматривается две сети operator net и selector net, маски для признаков - бинарные вектора (1 - берем признак, 0 - нет), оптимальное кол-во признаков - гиперпараметр
+  - обучение происходит поочередно
+  - operator net:
+    - цель - обучение с учителем конкретной задачи
+    - input - x и маска признаков
+    - loss - соответствующий задаче
+  - selector net:
+    - цель - предсказать loss operator net
+    - input - маска признаков
+    - loss - l2 с loss'ом, переданным от operator net
+  - важность признака - соответствующая компонента градиента loss'а selector net'а в точке оптимального набора признаков
+  - процесс построения оптимального набора очень долгий  
+  *Итог*:
+    - в среднем лучше качество на синтетических данных
+    - лучшее RFE, BAHSIC, mRMR, CCM на 4-ёх benchmark датасетах
+
+- **Knockoffs for the mass: new feature importance statistics with false discovery guarantees, 2019** [[paper]](http://proceedings.mlr.press/v89/gimenez19a/gimenez19a.pdf)
+  - In work
