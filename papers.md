@@ -35,7 +35,7 @@
   - важность признака - площадь под кривой (y - доля правильно отобранных признаков, x - параметр взвешенной суммы) для некоторого диапазона (например, [0, 10])
   - FDR в реальности нельзя оценить, предполагается, что мы хорошо моделируем распределение выборки
 
-- **A Unified Approach to Interpreting Model Predictions, 2019** [[paper]](https://proceedings.neurips.cc/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf)
+- **A Unified Approach to Interpreting Model Predictions, 2017** [[paper]](https://proceedings.neurips.cc/paper/2017/file/8a20a8621978632d76c43dfd28b67767-Paper.pdf)
   - рассматривается семейство аддитивных explanation models
   - в данном классе существует единственная explanation model, удовлетворяющая свойствам:
     - local accuracy - совпадение значений f(x) и exp_model(x')
