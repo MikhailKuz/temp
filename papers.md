@@ -1,3 +1,4 @@
+## Конспекты статей 
 - **Accurate and Robust Feature Importance Estimation under Distribution Shifts, 2020**  [[paper]](https://arxiv.org/pdf/2009.14454.pdf)
   - описывается подход к оценке важности признаков для нейросетей: основная сеть обучается совместно с дополнительной (second net), у которой:
     - цель - научиться предсказывать loss основной сети
