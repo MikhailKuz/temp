@@ -1,3 +1,4 @@
+## Todo list
 Прочитать и законспектировать обязательные статьи из раздела «важность признаков» [отсюда](https://github.com/Dyakonov/MSU) 
 - [x] Strobl C., Boulesteix A.-L., Zeileis A., Hothorn T. Bias in random forest variable importance measures (2007). BMC Bioinformatics
 - [ ] van der Laan MJ (2006) Statistical inference for variable importance. Int J Biostat.
