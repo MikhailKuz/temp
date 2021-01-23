@@ -120,7 +120,7 @@
     - Equipped with MCR, wecan relax the common assumption of being able to correctly specify the unknown model ofinterest (here, COMPAS) up to a parametric form
     - //We assume that observations ofZareiid, thatn≥2, and thatsolutions to arg min and arg max operations exist whenever optimizing over sets mentionedin this paper (for example, in Theorem 4, below)//
     - R()  :={f∈F:EL(f,Z)≤EL(fref,Z) +}
-    - ![alt text](1500x500.png "Title")
+    
   *Итоги экспериментов*:  
     - NRFE и RFE в целом имеют одинаковое качество
 
