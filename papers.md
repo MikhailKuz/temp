@@ -122,6 +122,7 @@
     - //We assume that observations ofZareiid, thatn≥2, and thatsolutions to arg min and arg max operations exist whenever optimizing over sets mentionedin this paper (for example, in Theorem 4, below)//
     - R()  :={f∈F:EL(f,Z)≤EL(fref,Z) +}
     - ![alt text](./equation.svg "Title")
+    - <img src="./equation.svg">
   *Итоги экспериментов*:  
     - NRFE и RFE в целом имеют одинаковое качество
 
