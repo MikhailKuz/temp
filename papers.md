@@ -110,4 +110,17 @@
   - даже сильно коррелирующие признаки с целевой переменной могут получить малую важность из-за корреляции между собой  
   *Итоги экспериментов*:  
     - NRFE и RFE в целом имеют одинаковое качество
+  
+- **All Models are Wrong, but Many are Useful, 2018** [[paper]](https://arxiv.org/pdf/1801.01489.pdf)
+  - Raw:
+    - Our  motivation  is  that  Rashomon  sets  (defined  formally  below)  summarize  therange of effective prediction strategies that an analyst might choose
+    - (MR). This measure is based on permutationimportance measures for Random Forests and can be  expanded  to  describe  conditional  importance
+    - beyond describing variable importance, these tools can describe the range of riskpredictions that well-fitting models assign to a particular covariate profile, or the variance ofpredictions made by well-fitting models
+    - To this end, we apply a broad class of flexible, kernel-basedprediction models to predict COMPAS score
+    - Equipped with MCR, wecan relax the common assumption of being able to correctly specify the unknown model ofinterest (here, COMPAS) up to a parametric form
+    - //We assume that observations ofZareiid, thatn≥2, and thatsolutions to arg min and arg max operations exist whenever optimizing over sets mentionedin this paper (for example, in Theorem 4, below)//
+    - R()  :={f∈F:EL(f,Z)≤EL(fref,Z) +}
+    - ![alt text](1500x500.png "Title")
+  *Итоги экспериментов*:  
+    - NRFE и RFE в целом имеют одинаковое качество
 
