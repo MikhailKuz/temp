@@ -123,8 +123,11 @@
     - R()  :={f∈F:EL(f,Z)≤EL(fref,Z) +}
     - efwfew wefw ![alt text](./equation.svg "Title") efwefewf wefwefew
     - feewfwefw weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-    - efwfew wefw ![alt text](./1.svg "Title") efwefewf wefwefew
+    - efwfew wefw ![alt text](./1.svg "Title") efwefewf wefwefe
     - feewfwefw weeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+  - Основные формулы:  
+  ![alt text](./1.svg "Title")![alt text](./1.svg "Title")![alt text](./1.svg "Title")![alt text](./1.svg "Title")
+  
   *Итоги экспериментов*:  
     - NRFE и RFE в целом имеют одинаковое качество
 
