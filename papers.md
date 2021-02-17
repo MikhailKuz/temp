@@ -151,9 +151,11 @@
   - we present bound functions <img src="svgs/49e648991ffdfcbccd3b3fb2005ebe4b.svg?invert_in_darkmode" align=middle width=17.3288181pt height=22.8310566pt/> and <img src="svgs/706a470865330c718598b5dc21ed291e.svg?invert_in_darkmode" align=middle width=17.1461697pt height=22.8310566pt/> satisfying <img src="svgs/4ea8c210394ae0fbc804a501d7f4f746.svg?invert_in_darkmode" align=middle width=77.5422813pt height=24.657534pt/> <img src="svgs/6cf76cf8bcf20ee06c13946ba1c7bc3f.svg?invert_in_darkmode" align=middle width=139.30602675pt height=32.9680131pt/> simultaneously for all <img src="svgs/33a26985ed3f74c6c328d961bdb4040f.svg?invert_in_darkmode" align=middle width=306.673455pt height=24.657534pt/>
   - almost all of the results shown in this section, and those in Section 6.2 . also hold if we replace <img src="svgs/d758b434ea5969b8eb5cf4ea54c47c3e.svg?invert_in_darkmode" align=middle width=43.85524275pt height=22.8310566pt/> with <img src="svgs/c96dc920c4b6fd8b88f1e068eff8fe4f.svg?invert_in_darkmode" align=middle width=42.3689541pt height=22.8310566pt/> throughout (see Eq 3.5), including in the definition of <img src="svgs/3ad1b4f7e9adbad3bbb7704a6ee71e46.svg?invert_in_darkmode" align=middle width=30.3481893pt height=32.9680131pt/> and <img src="svgs/59e22f4aaefc5ca42e8f5a653371b456.svg?invert_in_darkmode" align=middle width=59.25291075pt height=31.5068952pt/> 
     
+  
   Binary Search for Empirical MR Lower Bound
   - Condition 8 (Criteria to continue search for <img src="svgs/3ad1b4f7e9adbad3bbb7704a6ee71e46.svg?invert_in_darkmode" align=middle width=30.3481893pt height=32.9680131pt/> lower bound) <img src="svgs/f78966e0991a9e03d6ee41a14a557d3f.svg?invert_in_darkmode" align=middle width=108.19909155pt height=31.5068952pt/> and <img src="svgs/98e16b9bf83e07cded0253295956f7a3.svg?invert_in_darkmode" align=middle width=128.55289755pt height=24.657534pt/>
-  - **Lemma 9** (*Lower bound for <img src="svgs/a9f64344f1c8a0d2d8f087315dcf31ac.svg?invert_in_darkmode" align=middle width=63.29348355pt height=32.9680131pt/>\gamma \in \mathbb{R}<img src="svgs/de0ee5dce92f880fd7af0593452bf7e7.svg?invert_in_darkmode" align=middle width=66.53969355pt height=22.8310566pt/>\hat{h}_{-, \gamma}\left(\hat{g}_{-, \gamma}\right) \geq 0,<img src="svgs/312c6239443379dfd51efbde3cb6aedf.svg?invert_in_darkmode" align=middle width=32.92822665pt height=22.8310566pt/>$
+  - **Lemma 9** (*Lower bound for <img src="svgs/3ad1b4f7e9adbad3bbb7704a6ee71e46.svg?invert_in_darkmode" align=middle width=30.3481893pt height=32.9680131pt/>*) If <img src="svgs/6fd73a861ca99d39a24a5cc49413f9e5.svg?invert_in_darkmode" align=middle width=41.38717935pt height=22.6483917pt/> satisfies <img src="svgs/546ffd587a2a4c3c2eeb3f7482ce8f31.svg?invert_in_darkmode" align=middle width=112.76531475pt height=31.5068952pt/> then
+    $$
     \frac{\hat{h}_{-, \gamma}\left(\hat{g}_{-, \gamma}\right)}{\epsilon_{a b s}}-\gamma \leq \widehat{M R}(f)
     $$
     for all $f \in \mathcal{F}$ satisfying $\hat{e}_{\text {orig }}(f) \leq \epsilon_{a b s} .$ It also follows that
@@ -179,7 +181,7 @@
     and
     $$
     f_{D}\left(x_{1}^{(a)}, x_{2}\right)=f_{D}\left(x_{1}^{(b)}, x_{2}\right) \text { for any } x_{1}^{(a)}, x_{1}^{(b)} \in \mathcal{X}_{1} \text { and } x_{2} \in \mathcal{X}_{2}
-    $$ 
+    $$
     Let $\gamma=0$. Under the above assumptions, it follows that either (i) there exists a function $\hat{g}_{-, 0}$ minimizing $\hat{h}_{-, 0}$ that does not satisfy Condition $8,$ or $($ ii $) \hat{e}_{\text {orig }}\left(\hat{g}_{-, 0}\right) \leq \epsilon_{a b s}$ and $\widehat{M R}\left(g_{-, 0}\right) \leq$ 1 for any function $\hat{g}_{-, 0}$ minimizing $\hat{h}_{-, 0}$.
     - tractability of our approach, as minimizing $\hat{h}_{-, \gamma}$ for $\gamma \geq 0$ is equivalent to minimizing reweighted empirical loss over an expanded sample of size $n^{2}$ :
       $$
@@ -187,6 +189,7 @@
       $$
       where $w_{\gamma}(i, j)=\frac{\gamma 1(i=j)}{n}+\frac{1(i \neq j)}{n(n-1)} \geq 0$
       
+  
   Binary Search for Empirical MR Upper Bound
   - <img src="svgs/0e966d02453e06d54e13be3a54b050da.svg?invert_in_darkmode" align=middle width=244.25013525pt height=31.5068952pt/> and <img src="svgs/371d351a36ba28cf9b36f9e86d04fcaa.svg?invert_in_darkmode" align=middle width=172.5885018pt height=32.3286942pt/>
   - Given an observed sample, we define the following condition for a pair of values <img src="svgs/b4635f8bf548f2dce0e282964bd75129.svg?invert_in_darkmode" align=middle width=75.2081418pt height=24.657534pt/> <img src="svgs/bb9800eb58b40dd0ed5704c9b5310a59.svg?invert_in_darkmode" align=middle width=83.6986887pt height=22.6483917pt/> and argmin function <img src="svgs/527755e80d779eb423ee66bb3decc25c.svg?invert_in_darkmode" align=middle width=39.40301805pt height=22.8310566pt/>
@@ -228,6 +231,7 @@
     $$
     where $\mathbf{W}:=\frac{1}{n-1}\left(\mathbf{1}_{n} \mathbf{1}_{n}^{\prime}-\mathbf{I}_{n}\right), \mathbf{1}_{n}$ is the $n$ -length vector of ones, and $\mathbf{I}_{n}$ is the $n \times n$
     identity matrix.
+    
     - сложность вычисления растёт линейно (можно расписать)
   - **Remark 16** (*Tractability of empirical MCR for linear model classes*) For any <img src="svgs/0b3224020b22b8293953c6417cc644b2.svg?invert_in_darkmode" align=middle width=64.70986995pt height=22.8310566pt/> and any fixed coefficients <img src="svgs/0409c0ab67c9122543d5824c2a06cdb9.svg?invert_in_darkmode" align=middle width=126.8860329pt height=22.8310566pt/> the linear combination
     $$
@@ -251,6 +255,7 @@
     B_{\text {ind }}=\max \left[\left\{\min _{y \in \mathcal{Y}}(y)-\sqrt{r_{\mathcal{X}} r_{l m}}\right\}^{2},\left\{\max _{y \in \mathcal{Y}}(y)+\sqrt{r_{\mathcal{X}} r_{l m}}\right\}^{2}\right]
     $$
     
+  
   Regression Models in a Reproducing Kernel Hilbert Space
   - <p align="center"><img src="svgs/8d42e24e03d916a3ccad8e93538da248.svg?invert_in_darkmode" align=middle width=523.8295458pt height=49.3155696pt/></p>
     Above, the norm $\left\|f_{\alpha}\right\|_{k}$ is defined as
@@ -290,8 +295,10 @@
   
   Estimation of CMR by Weighting, Matching, or Imputation
   - <img src="svgs/66a53a6f2a16676d89ee543e74e396f2.svg?invert_in_darkmode" align=middle width=561.7138626pt height=27.9453933pt/> ![img_38.png](img_38.png)
+    
     - $\hat{e}_{\text {weight }}(f)$ is unbiased for $e_{\text {cond }}(f)$
   - <img src="svgs/d4e48e19eb2277145137d98de3d2cfd1.svg?invert_in_darkmode" align=middle width=544.4781012pt height=43.0684122pt/>
+    
     - if the inverse probability weight $\mathbb{P}\left(X_{2}=\mathbf{X}_{2[i, \cdot}\right)^{-1}$ is known, then $\hat{e}_{\text {match }}(f)$ is unbiased for $e_{\text {cond }}(f)$ (see Appendix A.7).
   - However, when the covariate space is continuous or high dimensional, we typically cannotestimate  CMR  nonparametrically.
   - When the covariate space is continuous or high dimensional  
