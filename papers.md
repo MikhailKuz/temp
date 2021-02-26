@@ -96,7 +96,7 @@ python -m readme2tex --nocdn --output papers.md --rerender papers_raw.md
 - сэмплинг с возвратом сильно смещает selection frequency в сторону признаков с большим числом уникальных значений
 - permutation importance более устойчив
 
-## <a name="6" /> Gregorutti B, Michel B, Saint-Pierre P (2015) [Grouped variable importance with random forests and application to multiple functional data analysis](https://arxiv.org/pdf/1411.4170.pdf)
+## <a name="6"/> Gregorutti B, Michel B, Saint-Pierre P (2015) [Grouped variable importance with random forests and application to multiple functional data analysis](https://arxiv.org/pdf/1411.4170.pdf)
 - рассматривается оценка важности группы признаков с теоретической и практической стороны
 - теоретическая сторона
   - (признаки, целевая переменная) - случайный вектор
